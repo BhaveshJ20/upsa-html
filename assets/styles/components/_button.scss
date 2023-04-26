@@ -1,0 +1,17 @@
+.btn {
+  border-radius: 0;
+  text-align: center;
+  width: auto;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  @include media-breakpoint-down(md) {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+  }
+  &-secondary {
+    color: $white;
+    &:hover {
+      color: $white;
+    }
+  }
+}

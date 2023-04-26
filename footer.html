@@ -1,0 +1,144 @@
+<div class="footer-section">
+
+    <div class="footer-container">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-lg-5">
+                    <a href="#" class="footer-logo">
+                        <img src="assets/images/logo-white.png" alt="" height="70" width="296">
+                    </a>
+                    <div class="footer-description">
+                        <p>The University of Professional Studies, Accra (UPSA) was established in 1965 and has since
+                            then grown and advanced to
+                            become a progressive public institution that provides academic and professional higher
+                            education.</p>
+                        <a href="#">Read more</a>
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+
+                    <h3 class="footer-title">
+                        Quick links
+                    </h3>
+                    <ul class="footer-quick-links">
+                        <li><a href="https://apply.online.upsa.edu.gh/">Apply Now</a></li>
+                        <li><a href="https://apply.online.upsa.edu.gh/login/">Complete Your Application</a></li>
+                        <li><a href="fees.html">Fees</a></li>
+                        <li><a href="accessibility-statement.html">Accessibility statement</a></li>
+                        <li><a href="https://upsa.edu.gh/">Study on-campus</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="footer-title">
+                        Contact details
+                    </h3>
+                    <ul class="footer-contact-lists">
+                        <li class="media contact-info d-flex align-items-center">
+                            <span>
+                                <img src="assets/images/icon-phone.svg" alt="">
+                            </span>
+                            <div>
+                                <p><a href="tel:+233 303 937 542">+233 303 937 542</a></p>
+                                <p><a href="tel:+233 303 937 544">+233 303 937 544</a></p>
+                            </div>
+                        </li>
+                        <li class="media contact-info d-flex align-items-center">
+                            <span>
+                                <img src="assets/images/icon-message.svg" alt="">
+                            </span>
+
+                            <div>
+                                <p><a href="mailto:admissions@upsamail.edu.gh">admissions@upsamail.edu.gh</a></p>
+                            </div>
+                        </li>
+                    </ul>
+                    <h3 class="footer-title">
+                        Follow Us
+                    </h3>
+                    <ul class="footer-social-links">
+                        <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            <div class="row md-gutter d-flex justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <a href="#">Terms and conditions</a> |
+                    <a href="privacy-policy.html">Privacy Policy</a>
+
+                </div>
+                <div class="col-md-6 text-md-end">
+                    © 2021 University of Professional Studies, Accra
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer-sticky text-center">
+    <div class="container">
+        <div class="row justify-content-center align-items-center gx-3">
+            <div class="col-md-auto col-12"> Call +233 303 937 542</div>
+            <div class="col-md-auto col-auto"><a href="#" class="btn btn-secondary btn-sm">Request Information</a></div>
+            <div class="col-md-auto col-auto"><a href="#" class="btn btn-secondary btn-sm">Apply Now</a></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(".sticky-stop").length) {
+                var fixSidebar = $('.hero-banner').offset().top - 80;
+                var fixSidebar1 = $('.sticky-stop').offset().top;
+
+                if ($(window).scrollTop() >= fixSidebar) {
+                    $('.footer-sticky').addClass('fixed');
+                    //     alert(fixSidebar);
+                } else {
+                    $('.footer-sticky').removeClass('fixed');
+                }
+                if ($(window).scrollTop() >= fixSidebar1) {
+                    $('.footer-sticky').addClass('bottom');
+                    console.log(fixSidebar1)
+                } else {
+                    $('.footer-sticky').removeClass('bottom');
+                }
+            }
+        });
+
+    })
+
+    // var didScroll;
+    //     var lastScrollTop = 0;
+    //     var delta = 5;
+    //     var navbarHeight = $(".hero-banner").outerHeight();
+    //     $(window).scroll(function (event) {
+    //         didScroll = true;
+    //     });
+    //     setInterval(function () {
+    //         if (didScroll) {
+    //             hasScrolled();
+    //             didScroll = true;
+    //         }
+    //     }, 250);
+    //     function hasScrolled() {
+    //         var st = $(this).scrollTop();
+    //         if (Math.abs(lastScrollTop - st) <= delta) return;
+    //         if (st > lastScrollTop && st > navbarHeight) {
+    //             $(".footer-sticky").removeClass("footer-down").addClass("footer-up");
+    //         } else {
+    //             if (st + $(window).height() < $(document).height()) {
+    //                 $(".footer-sticky").removeClass("footer-up").addClass("footer-down");
+    //             }
+    //         }
+    //         lastScrollTop = st;
+    //     }
+</script>

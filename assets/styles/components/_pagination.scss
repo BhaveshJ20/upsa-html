@@ -1,0 +1,30 @@
+.pagination {
+  justify-content: center;
+}
+.page {
+  &-item {
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+    &:first-child {
+      .page-link {
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+      }
+    }
+    &:last-child {
+      .page-link {
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+      }
+    }
+  }
+  &-link {
+    border: 1px solid $light;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

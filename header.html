@@ -1,0 +1,154 @@
+<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=q7mffexef6p0hrrfi9g2hg" async="true">
+</script>
+<div class="header-wrapper">
+    <div class="top-bar">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-8 col-6 text-truncate">
+                    <a href="#">Covid-19 : UPSA response and updates</a>
+                </div>
+                <div class="col-md-auto col-6 justify-content-end text-end">
+                    <ul class="top-links-list text-truncate">
+                        <li>
+                            <a href="tel:+233 303 937 542">+233 303 937 542</a>
+                        </li>
+                        <li>
+                            <a href="#">Request Information</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main navbar navbar-expand-lg">
+        <div class="container d-block">
+            <div class="row md-gutter d-flex justify-content-between align-items-center">
+                <div class="col-lg-3 col-3 d-lg-none">
+                    <button class="navbar-toggle  collapsed" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                        <span class="icon-bar"> </span>
+                    </button>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <a class="header-logo" href="/">
+                        <img src="assets/images/logo.png" alt="" class="img-fluid" width="296" height="70">
+                    </a>
+                </div>
+                <div class="col-lg-9 col-3 ms-auto text-right">
+                    <button class="btn btn-primary d-lg-none d-flex ms-auto call-btn"><i
+                            class="icon icon-phone"></i></button>
+                    <ul class="nav  main-nav navbar-nav justify-content-end">
+                        <li class="dropdown activated">
+                            <a href="programme-list.html" class="nav-link active">Programmes
+                                <i class="arrow-down ml-2"></i></a>
+                            <ul class="list-unstyled sub-menu">
+                                <li><a class="dropdown-item" href="#">MBA General</a></li>
+                                <li><a class="dropdown-item" href="#">MBA Leadership</a></li>
+                                <li><a class="dropdown-item" href="#">MBA International Business</a></li>
+                                <li><a class="dropdown-item" href="#">MBA Management and Information Systems</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">MBA Financial Management / Corporate Finance</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">MBA Business Management</a></li>
+                                <li><a class="dropdown-item" href="#">MBA Management Consulting</a></li>
+                                <li><a class="dropdown-item" href="#">MBA Asset and Wealth Management</a></li>
+                                <li><a class="dropdown-item" href="#">MBA Strategic Operations Management</a></li>
+                                <li><a class="dropdown-item" href="#">MBA Hospitality Management</a></li>
+                                <li><a class="dropdown-item" href="#">MBA Engineering Management</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="fees.html" class="nav-link">Fees</a></li>
+                        <li><a href="abouts.html" class="nav-link">About</a></li>
+                        <li><a href="blog-listing.html" class="nav-link">Blog</a></li>
+                        <li><a href="#" class="nav-link">Apply Now</a></li>
+                        <li>
+                            <form class="col-12 col-lg-auto">
+                                <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                            </form>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sidebar-wrapper d-lg-none">
+    <div class="sidebar-container d-flex flex-column">
+        <ul class="nav-mobile">
+            <li>
+                <div class="mobile-search-wrapper">
+                    <form>
+                        <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                    </form>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="nav-mobile-dropdown">Programmes
+                    <i class="arrow-down ml-2"></i></a>
+                <ul class="sub-mobile-category">
+                    <li><a class="dropdown-item nav-link" href="#">MBA General</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Leadership</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA International Business</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Management and Information Systems</a>
+                    </li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Financial Management / Corporate Finance</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Business Management</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Management Consulting</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Asset and Wealth Management</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Strategic Operations Management</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Hospitality Management</a></li>
+                    <li><a class="dropdown-item nav-link" href="#">MBA Engineering Managementt</a></li>
+                </ul>
+            </li>
+            <li><a href="fees.html" class="nav-link">Fees</a></li>
+            <li><a href="abouts.html" class="nav-link">About</a></li>
+            <li><a href="blog-listing.html" class="nav-link">Blog</a></li>
+            <li><a href="#" class="nav-link">Apply Now</a></li>
+        </ul>
+    </div>
+
+</div>
+
+<script>
+    $(document).ready(function () {
+        $(window).on('scroll', function () {
+            if ($(window).scrollTop() >= 32) {
+                $('.header-wrapper').addClass('header-fixed');
+            } else {
+                $('.header-wrapper').removeClass('header-fixed');
+            }
+        });
+        $("li.dropdown ").hover(
+            function () {
+                //  $(this).addClass("activated");
+                $(this).find(".sub-menu").addClass("open");
+            },
+            function () {
+                $(this).removeClass("activated");
+                $(".sub-menu").removeClass("open");
+            }
+        );
+        $(".navbar-toggle, .nav-link").click(function () {
+            $(".sidebar-wrapper").toggleClass("visible");
+            $(".navbar-toggle").toggleClass("active");
+            $("html").toggleClass("noScroll");
+            $(".navbar-toggle").toggleClass("collapsed ");
+        });
+        $(".nav-mobile-dropdown").click(function () {
+            $(".nav-mobile-dropdown").removeClass("opened");
+            $(".expand-nav").removeClass("open");
+            $(".sub-mobile-category").slideUp();
+            if ($(this).next().is(":hidden") == true) {
+                // $(this).find(".expand-nav").addClass("open");
+                $(this).addClass("opened");
+                $(this).next().slideDown();
+            }
+        });
+        var page = location.pathname.split('/').pop();
+        $('.main-nav li a[href="' + page + '"]').addClass('activated')
+    });
+</script>

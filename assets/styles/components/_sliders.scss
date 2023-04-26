@@ -1,0 +1,22 @@
+.owl-theme .owl-dots .owl-dot {
+  &.active {
+    span {
+      width: 46px;
+      height: 5px;
+      border-radius: 2.5px;
+      background: $secondary;
+    }
+  }
+  &:hover {
+    span {
+      background: $primary;
+    }
+  }
+  span {
+    width: 10px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: $secondary;
+    transition: all 0.2s ease-in-out;
+  }
+}

@@ -1,0 +1,91 @@
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+
+.abouts-img-wrapper {
+  position: relative;
+  padding-right: 40px;
+  .experience {
+    &-wrapper {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-10%,-30%);
+      padding: 30px 30px 30px 60px;
+      background: url(/assets/images/experience-bg.svg) no-repeat;
+      color: #fff;
+      background-size: contain;
+    }
+    &-years {
+      font-size: rem(20px);
+      line-height: normal;
+    }
+    &-text {
+      font-size: rem(16px);
+      line-height: normal;
+    }
+  }
+}
+
+.benefits {
+  &-block {
+    padding: 20px;
+    font-size: rem(14px);
+    font-weight: 300;
+    line-height: 1.77;
+    border-radius: 10px;
+    margin: 10px 0;
+    min-height: calc(100% - 20px);
+    transition: all ease 0.5s 0s;
+    text-align: center;
+    cursor: pointer;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.161));
+    color: #fff;
+    &:hover {
+      background-color: $primary;
+      color: #fff;
+    }
+    &.bg-maroon {
+      background: rgba(168, 81, 138, 0.9);
+      
+    }
+    &.bg-pink {
+      background: rgba(236, 38, 143, 0.9);
+     
+    }
+    &.bg-cyan {
+      background: rgba(0, 175, 239, 0.9);
+     
+    }
+    &.bg-purple {
+      background: rgba(149, 123, 183, 0.9);
+     
+    }
+  }
+
+  &-icon {
+    width: 68px;
+    height: 68px;
+    background-color: #fff;
+    border-radius: 100%;
+    border: 1px solid #707070;
+    margin: 10px auto;
+  }
+  &-title {
+    font-size: rem(18px);
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+}
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}

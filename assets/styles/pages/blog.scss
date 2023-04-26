@@ -1,0 +1,143 @@
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+.blog-card {
+  .card {
+    &-title {
+      font-size: 1.125rem;
+    }
+  }
+  .link {
+    font-size: 1.125rem;
+    text-decoration: none;
+    font-weight: normal;
+    &::after {
+      content: "\27F6";
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+  }
+}
+.blog {
+  &-img {
+    margin-bottom: 3.125rem;
+  }
+  &-nav-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.75rem;
+  }
+  &-btn {
+    &-prev,
+    &-next {
+      display: flex;
+      flex-direction: column;
+      span {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        font-weight: 500;
+      }
+    }
+    &-prev {
+      align-items: flex-start;
+      text-align: left;
+      margin-right: 1rem;
+      span {
+        &::before {
+          content: "\27F5";
+          margin-right: 0.5rem;
+        }
+      }
+    }
+    &-next {
+      align-items: flex-end;
+      text-align: right;
+      margin-left: 1rem;
+      span {
+        &::after {
+          content: "\27F6";
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}
+.tags {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 1rem;
+  }
+  &-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4.75rem;
+    @include media-breakpoint-down(md) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: 1.25rem;
+    padding: 0;
+    li {
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  .badge {
+    font-weight: normal;
+    color: $white;
+    &:hover {
+      color: $white;
+      opacity: 0.9;
+    }
+  }
+}
+.social {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-left: 0.75rem;
+    padding: 0;
+    li {
+      &:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  a {
+    img {
+      transition: all 0.2s ease-in-out;
+      opacity: 1;
+    }
+    &:hover {
+      img {
+        opacity: 0.8;
+      }
+    }
+  }
+}
+.article-section {
+  background: $lightest;
+  position: relative;
+  margin-bottom: -3rem;
+  padding-bottom: 6rem;
+  @include media-breakpoint-down(md) {
+    margin-bottom: -6rem;
+  }
+}

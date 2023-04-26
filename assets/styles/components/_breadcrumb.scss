@@ -1,0 +1,18 @@
+.breadcrumb {
+  margin: 0.625rem 0;
+  color: $primary;
+  a {
+    color: $primary;
+    &:hover {
+      color: $secondary;
+    }
+  }
+  &-item {
+    & + .breadcrumb-item::before {
+      color: $primary;
+    }
+    &.active {
+      color: $primary;
+    }
+  }
+}

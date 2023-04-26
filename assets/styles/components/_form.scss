@@ -1,0 +1,28 @@
+.form {
+  &-control,
+  &-select {
+    border-radius: 0;
+    border: 1px solid #e1e4e8;
+    font-size: 0.875rem;
+    padding: 0.875rem 1rem;
+    &-bg {
+      background-color: #f7f7f7;
+    }
+  }
+  &-select {
+    padding-right: 2rem;
+  }
+  &-check {
+    &-label {
+      font-weight: normal;
+      font-size: 0.875rem;
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+  }
+}
+.phone-number > .form-select {
+  flex: 0 1 auto;
+}
+
+

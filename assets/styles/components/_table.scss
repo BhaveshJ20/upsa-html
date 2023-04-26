@@ -1,0 +1,58 @@
+
+.programme {
+  &-table {
+    --bs-table-striped-bg: #FCFCFC;
+    & > :not(:first-child) {
+      border-top: none !important;
+    }
+    & > :not(caption) > * > * {
+      padding: 10px 20px;
+      @include media-breakpoint-up(md) {
+        padding: 12px 30px;
+      }
+    }
+  }
+  &-summary {
+    background-color: $primary;
+    color: #fff;
+    th {
+      font-weight: 300;
+      text-transform: uppercase;
+      @include media-breakpoint-up(md) {
+        font-size: rem(18px);
+      }
+    }
+    &-total {
+      background-color: $secondary !important;
+      color: #fff;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+  &-header {
+    background-color: #f5ead4;
+    th {
+      font-weight: 500;
+      @include media-breakpoint-up(md) {
+        font-size: rem(18px);
+      }
+    }
+  }
+  &-footer {
+    background-color: $secondary;
+    color: #fff;
+  }
+}
+
+.table{
+      &-header td{
+      background-color: $primary;
+      color: #fff !important;
+      box-shadow: none;
+
+  }
+      &-footer {
+      background-color: $primary;
+      color: #fff;
+  }
+}

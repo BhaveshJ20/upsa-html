@@ -1,0 +1,57 @@
+
+.programe {
+  &-item {
+    margin-bottom: 30px;
+    min-height: calc(100% - 30px);
+    .card-body {
+      padding: rem(20px);
+    }
+    .card-title {
+      font-size: rem(22px);
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      line-height: 1.3;
+    }
+  }
+
+  &-img {
+    border-bottom: 3px solid $secondary;
+  }
+  &-info {
+    margin:  auto 0 0 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: rem(14px);
+    color: $secondary;
+    li {
+      flex: 0 0 auto;
+      width: 50%;
+      position: relative;
+       &.date{
+        width: 58%;
+        text-align: start;
+      }
+      &.duration{
+        width: 42%;
+        text-align: end;
+      }
+      &.duration:before {
+        margin-left: 10px;
+        margin-right: 10px;
+        content: "";
+        height: 12px;
+        width: 1px;
+        background-color: currentColor;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 6px;
+      }
+    }
+  }
+}

@@ -1,0 +1,144 @@
+.footer {
+  &-section {
+    color: #a1a2ab;
+    background-color: #00004e;
+    clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+    padding-top: 3rem;
+    @include media-breakpoint-down(md) {
+      clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
+    }
+  }
+  &-container {
+    background-color: #00004e;
+    padding: 3.25rem 0;
+    a {
+      color: #a1a2ab;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+  &-logo {
+    margin-bottom: 1.5rem;
+    display: block;
+  }
+  &-description {
+    text-align: left;
+    max-width: 85%;
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+    }
+    p {
+      @include media-breakpoint-down(md) {
+        margin-bottom: 0;
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+      }
+    }
+
+    a {
+      color: $secondary;
+      font-weight: 500;
+      text-decoration: underline;
+      @include media-breakpoint-down(md) {
+        font-size: 0.875rem;
+      }
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+  &-title {
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+    text-align: left;
+    @include media-breakpoint-down(md) {
+      font-size: 1rem;
+    }
+  }
+  &-quick-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @include media-breakpoint-down(md) {
+      font-size: 0.875rem;
+    }
+    li {
+      text-align: left;
+      padding: 3px 0;
+      @include media-breakpoint-down(md) {
+        line-height: 1.75rem;
+      }
+    }
+  }
+  &-contact-lists {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: flex;
+      align-items: flex-start;
+
+      margin-bottom: 0.875rem;
+      img {
+        margin-right: 1rem;
+      }
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &-social-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      &:not(:last-child) {
+        margin-right: 0.625rem;
+      }
+      a {
+        font-size: 2.5rem;
+        color: $secondary;
+        &:hover {
+          color: $white;
+          text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
+  &-copyright {
+    background-color: #111;
+    padding: 15px 0;
+    font-size: 0.8rem;
+    line-height: normal;
+    color: #a1a2ab;
+    a {
+      color: #a1a2ab;
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+}
+
+.footer-sticky {
+  padding: 15px 0;
+  position: fixed;
+  background: #111;
+  width: 100%;
+  color: #fff;
+  z-index: 999;
+  transform: translate(0, 100%);
+  transition: transform 0.3s ease-in-out;
+  &.fixed {
+    bottom: 0;
+    transform: translate(0, 0);
+  }
+  .btn {
+    padding: 0.5rem 1.5rem;
+  }
+}

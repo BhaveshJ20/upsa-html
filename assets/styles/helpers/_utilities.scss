@@ -1,0 +1,109 @@
+.page-section {
+  margin: 6.5rem 0;
+  @include media-breakpoint-down(md) {
+    margin: 2.5rem 0;
+  }
+}
+
+.cross-page-section {
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  margin: 3rem 0;
+
+  @include media-breakpoint-down(lg) {
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  }
+
+  @include media-breakpoint-down(md) {
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .img-block {
+    @include media-breakpoint-down(md) {
+      clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+
+      padding: 0 1rem;
+      position: relative;
+      z-index: 2;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+      @include media-breakpoint-down(lg) {
+        min-height: 500px;
+      }
+    }
+  }
+  .content-block {
+    background: #f5ead4;
+    @include media-breakpoint-down(md) {
+      clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+
+      margin-top: -95%;
+      padding-top: 95%;
+    }
+    .content {
+      padding: 9.375rem 5rem;
+      @include media-breakpoint-down(lg) {
+        padding: 2rem 1rem;
+        padding-bottom: 6rem;
+      }
+    }
+  }
+}
+
+.cross-page-top-section {
+  clip-path: polygon(0 10%, 100% 0%, 100% 100%, 0 100%);
+  padding: 3rem 0;
+  padding-top: 6rem;
+  margin-top: 2rem;
+  .container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    @include media-breakpoint-down(md) {
+      margin-top: 0rem;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0 100%);
+  }
+}
+
+.cross-page-bottom-section {
+  clip-path: polygon(0 0, 100% 0%, 100% 90%, 0 100%);
+  padding: 3rem 0;
+  padding-bottom: 6rem;
+  margin-bottom: 2rem;
+  @include media-breakpoint-down(md) {
+    clip-path: polygon(0 0, 100% 0%, 100% 95%, 0 100%);
+  }
+  .container {
+    margin-bottom: 3rem;
+  }
+}
+
+
+.section-block {
+  position: relative;
+  padding: rem(48px) 0;
+  & + &:not(.section-bg) {
+    padding-top: 0;
+  }
+}
+
+.linen-bg{
+    background-color: #F8EEDF;
+}
+.cross-page-top-bottom-section {
+  clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+  padding: 6rem 0;
+  margin-top: 2rem;
+  margin-right: 2rem;
+  .container {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  @include media-breakpoint-down(md) {
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
+  }
+}

@@ -1,0 +1,17 @@
+@import "../abstracts/variables";
+@import "../abstracts/functions";
+
+.cms-content {
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 0.625rem;
+  }
+  p {
+    margin-bottom: 1.875rem;
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.67;
+  }
+}
+
